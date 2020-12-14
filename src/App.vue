@@ -28,7 +28,7 @@
 	export default {
 		metaInfo() {
 			return {
-				title: 'Curve.fi :: ' + titles[this.currentPool],
+				title: 'StableXswap :: ' + titles[this.currentPool],
 				meta: [
 					{'property': 'og:title', 'content': 'curve.fi/' + this.currentPool},
 					{'property': 'og:url', 'content': 'https://curve.fi/' + this.currentPool},
