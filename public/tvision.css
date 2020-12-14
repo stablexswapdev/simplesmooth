@@ -1,224 +1,3 @@
-html {
-  background: #a5a4ce;
-  font-family: System, monospace;
-  font-size: 10pt
-}
-
-body {
-    padding: 0;
-    margin: 0;
-}
-
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: local('JetBrains Mono Regular'), local('JetBrainsMono-Regular'), url(https://trade.stablexswap.comJetBrainsMono-Regular.woff2) format('woff2');
-}
-
-.window {
-  position: relative;
-  cursor: default;
-  margin: 2em auto; width: 80%;
-  background: #3465a4; color: white;
-  border: 6px double white;
-  padding: 1em;
-  box-shadow:
-    0   0   0   3px #3465a4,
-    1em 1em 3px 0 rgba(0,0,0,.5);
-  max-width: 640px;
-}
-
-.window.error {
-    background: red;
-    box-shadow:
-        0   0   0   3px red,
-        1em 1em 3px 0 rgba(0,0,0,.5);
-}
-
-.window.white {
-  background: silver;
-  color: black;
-  border-color: white;
-  box-shadow:
-    0   0   0   3px silver,
-    1em 1em 3px 0 rgba(0,0,0,.5);
-}
-
-.window.half-width {
-  width: 80%;
-}
-
-.window :link {
-  color: inherit;
-  font-weight: bolder;
-  text-decoration: none;
-}
-
-.window :link:hover {
-  text-decoration: underline;
-}
-
-.window h1 {
-  text-align: center;
-}
-
-
-.window.blue p {
-  /*color: white; text-shadow: 0 0 2px white;*/
-}
-
-button {
-  margin:0;padding:0;border:none;
-  cursor: pointer;
-}
-
-button,
-.button,
-.button:link,
-select.tvision {
-  display: inline-block;
-  font-weight: bolder;
-  color: white;
-  font-family: inherit;
-  font-size: inherit;
-  background: green;
-  padding: 0 1em;
-  box-shadow: .5em .5em 3px rgba(0,0,0,.5);
-  position: relative;
-  transition: .2s all ease-in;
-  border: 1px outset green;
-}
-
-button[disabled] {
-  background: gray;
-  box-shadow: none;
-  border: none;
-}
-button[disabled]:hover {
-  transform: none;
-  box-shadow: none;
-  background: gray;
-}
-
-button.full-width,
-.button.full-width {
-  display: block;
-  text-align: center;
-}
-
-button:before,
-.button:before {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  content: "";
-  position: absolute;
-  /*background: rgba(255,255,0,.5); /* DEBUG CLICK AREA */
-}
-
-button:hover,
-.button:active,
-.button:focus,
-.button:hover
-{
-  transform: translate3d(.25em,.25em,10em);
-  box-shadow: 0 0 0 rgba(0,0,0,.5);
-  background: limegreen;
-}
-
-button:hover:before,
-.button:hover:before,
-button:focus:before,
-.button:focus:before
-{
-  top: -1em;
-  left: -1em;
-}
-
-.button.pressed {
-    box-shadow: none;
-    left: 0.25em;
-    top: 0.25em;
-    margin-right: 0.25em;
-    background: gray;
-    border: 1px outset #707070;
-}
-
-button:first-letter,
-.button:first-letter {
-  color: yellow;
-}
-
-input, textarea {
-  background: blue;
-  color: aqua;
-  width: 100%;
-  max-width: 100%;
-  font-size: 12pt;
-}
-
-input {
-  padding: 1px 0 1px 0;
-  border-radius: 0;
-}
-
-input:disabled {
-  background: #505070;
-  color: #d0d0d0;
-  /*border: 2px solid #505070;*/
-}
-
-input[type=radio],
-input[type=checkbox] {
-  display: none;
-}
-
-input[type=radio] + label[for]:before,
-input[type=checkbox] + label[for]:before {
-  text-align:center;
-  display: inline-block;
-  height: 1em; width: 2em;
-}
-
-input[type=radio] + label[for]:before {
-  content: "( ) ";
-  cursor: pointer;
-}
-
-input[type=checkbox] + label[for]:before {
-  content: "[ ] ";
-  cursor: pointer;
-}
-
-input[type=radio]:checked + label[for]:before {
-  content: "(•) ";
-  cursor: pointer;
-}
-
-input[type=checkbox]:checked + label[for]:before {
-  content: "[X] ";
-  cursor: pointer;
-}
-
-.window > textarea {
-  width: 100%;
-  border: none;
-}
-
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .top-menu-bar {
   top: 0; left: 0; right: 0;
   background: silver;
@@ -226,23 +5,23 @@ li {
   text-align: center;
 }
 
-.top-menu-bar a, .poolsdialog a .top-menu-bar .icon-container {
+.top-menu-bar a, .poolsdialog a .top-menu-bar .icon-container, footer a {
   margin: 0 1em;
   text-decoration: none;
   color: black;
   padding: 0 1em;
 }
 
-.top-menu-bar a:visited, .poolsdialog a:visited {
+.top-menu-bar a:visited, .poolsdialog a:visited, footer a:visited {
     color: black;
 }
 
-.top-menu-bar a:hover, .poolsdialog div.selected, .poolsdialog div.selected a, .poolsdialog div.selected a:visited {
+.top-menu-bar a:hover, .poolsdialog div.selected, .poolsdialog div.selected a, .poolsdialog div.selected a:visited, footer a:hover {
     background-color: #505050;
     color: #c0c0c0;
 }
 
-.top-menu-bar a.selected, .top-menu-bar a.router-link-exact-active, .poolsdialog div:hover, .poolsdialog div:hover a, .poolsdialog div:hover a:visited {
+.top-menu-bar a.selected, .top-menu-bar a.router-link-exact-active, .poolsdialog div:hover, .poolsdialog div:hover a, .poolsdialog div:hover a:visited, footer a.router-link-exact-active {
     background-color: blue;
     color: white;
 }
@@ -263,7 +42,7 @@ li {
 }
 
 div.add-liquidity input {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.6em;
 }
 
 strong:before, strong:after { content: "*"; }
@@ -547,6 +326,10 @@ fieldset:nth-child(1) .maxbalance:hover {
   width: 1.5em;
   height: 1.5em;
 }
+.icon.small {
+  width: 0.95em;
+  height: 0.95em;
+}
 
 .ethicon {
   filter: invert(0.4) sepia(1) saturate(0.8) hue-rotate(223deg);
@@ -575,20 +358,45 @@ fieldset:nth-child(1) .maxbalance:hover {
   margin-right: 1em;
 }
 
-#custom_slippage_input {
-  width: 2.5em;
+#custom_slippage_input, #custom_gas_input {
+  width: 2.1em;
 }
 
-#max_slippage {
-  margin-bottom: 10px;
+#max_slippage span:first-of-type {
+  padding-left: 0;
 }
 
 #max_slippage span {
   padding-left: 4px;
 }
 
-#custom_slippage_input {
+#gas_price {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+#gas_price > div {
+  display: inline;
+}
+
+#max_slippage label, #gas_price label {
   margin-left: 0.5em;
+}
+label[for='gasstandard'] {
+  color: grey;
+}
+label[for='gasfast'] {
+  color: green;
+}
+label[for='gasinstant'] {
+  color: purple;
+}
+
+#custom_slippage_input, #custom_gas_input {
+  margin-left: 0.5em;
+}
+
+.exchange label[for='inf-approval'], .exchange label[for='swapw'] {
+  margin-left: -2px;
 }
 
 .exchange-rate {
@@ -613,6 +421,13 @@ fieldset:nth-child(1) .maxbalance:hover {
   #max_slippage > * {
     width: 100%;
   }
+  #max_slippage > label {
+    margin-left: 0;
+  }
+  #gas_price > label {
+    display: block;
+    margin-left: 0;
+  }
 }
 
 .simplebutton {
@@ -625,10 +440,10 @@ fieldset:nth-child(1) .maxbalance:hover {
   box-shadow: none;
 }
 
-button.bn-onboard-custom:first-letter {
+button.bn-onboard-custom:first-letter, #derivation-select button:first-letter, #account-select + button {
   color: inherit;
 }
-button.bn-onboard-custom {
+button.bn-onboard-custom, #derivation-select button, #account-select + button {
   box-shadow: none;
 }
 
@@ -642,95 +457,13 @@ button.bn-onboard-custom {
   max-width: 1000px;
 }
 
-#app.RootIndex .tradeview {
+.window.Gateway, .white.window.rengateway {
+  width: 80%;
   max-width: 700px;
 }
 
-input[type=range] {
-  background: inherit;
-  -webkit-appearance: none;
-  width: 100%;
-  margin: 7.3px 0;
-}
-input[type=range]:focus {
-  outline: none;
-}
-input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 8.4px;
-  cursor: pointer;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  background: #ffffff;
-  border-radius: 0px;
-  border: 0.2px solid #010101;
-}
-input[type=range]::-webkit-slider-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 23px;
-  width: 16px;
-  border-radius: 0px;
-  background: #008000;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -7.5px;
-}
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #ffffff;
-}
-input[type=range]::-moz-range-track {
-  width: 100%;
-  height: 8.4px;
-  cursor: pointer;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  background: #ffffff;
-  border-radius: 0px;
-  border: 0.2px solid #010101;
-}
-input[type=range]::-moz-range-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 23px;
-  width: 16px;
-  border-radius: 0px;
-  background: #008000;
-  cursor: pointer;
-}
-input[type=range]::-ms-track {
-  width: 100%;
-  height: 8.4px;
-  cursor: pointer;
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
-}
-input[type=range]::-ms-fill-lower {
-  background: #ededed;
-  border: 0.2px solid #010101;
-  border-radius: 0px;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-}
-input[type=range]::-ms-fill-upper {
-  background: #ffffff;
-  border: 0.2px solid #010101;
-  border-radius: 0px;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-}
-input[type=range]::-ms-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 23px;
-  width: 16px;
-  border-radius: 0px;
-  background: #008000;
-  cursor: pointer;
-  height: 8.4px;
-}
-input[type=range]:focus::-ms-fill-lower {
-  background: #ffffff;
-}
-input[type=range]:focus::-ms-fill-upper {
-  background: #ffffff;
+#app.RootIndex .tradeview {
+  max-width: 700px;
 }
 
 .tradeview .highcharts-range-selector-buttons > text:first-child{
@@ -746,61 +479,6 @@ input[type=range]:focus::-ms-fill-upper {
 .highcharts-range-label {
   display: none;
 }*/
-
-/* Tooltip container */
-.tooltip {
-  margin-left: 3px;
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-}
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-  font-size: 0.8em;
-  visibility: hidden;
-  width: 140px;
-  background-color: #3465a4e6;
-  color: white;
-  text-align: center;
-  padding: 5px 0;
-  box-shadow: 2px 3px 0px -1px rgba(0,0,0,0.51);
-  border-radius: 6px;
-  margin-bottom: 6px;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -70px;
-  /* Position the tooltip text - see examples below! */
-  position: absolute;
-  z-index: 1;
-}
-
-.tooltiptext.long {
-  width: 300px;
-  margin-left: -150px;
-  padding: 1em;
-}
-
-.tooltip .tooltiptext::after {
-  content: " ";
-  position: absolute;
-  top: 100%; /* At the bottom of the tooltip */
-  left: 50%;
-  transform: translateX(-50%);
-  border-width: 5px;
-  border-style: solid;
-  border-color: #3465a4e6 transparent transparent transparent;
-}
-
-.tooltip .tooltiptext.long::after {
-  margin-left: -1em;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  text-align: center;
-  visibility: visible;
-}
 
 .yellowchar {
   color: yellow;
@@ -829,6 +507,10 @@ input[type=range]:focus::-ms-fill-upper {
 
 .poolsdropdown:not(.right) {
   margin-right: 1em;
+}
+
+.simple-error.pulse {
+  margin-top: 0.3em;
 }
 
 /*@media only screen and (max-device-width: 1280px) {
@@ -878,11 +560,33 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 730px) {
+  .window {
+    width: 90%;
+  }
   .poolsdropdown.right {
     display: none !important;
   }
   .showmobile {
     display: block;
+  }
+}
+
+.showmobiletable {
+  display: none;
+}
+
+@media only screen and (max-device-width: 950px) {
+  .showdesktop {
+    display: none;
+  }
+  .showmobiletable {
+    display: block;
+  }
+}
+
+@media only screen and (max-device-width: 500px) {
+  p.buttons button:nth-child(n+3), div.buttons button:nth-child(n+3) {
+    margin-top: 0.8em;
   }
 }
 
@@ -900,7 +604,6 @@ input[type=range]:focus::-ms-fill-upper {
 }
 .iconcontainer {
     align-self: center;
-    flex: 0.1;
     border: 0;
     margin: 0;
     padding: 0;
@@ -934,6 +637,7 @@ input[type=range]:focus::-ms-fill-upper {
     }
     .iconcontainer {
         flex: auto;
+        margin-top: 0.3em;
     }
     #exchangeicon {
         transform: rotate(90deg);
@@ -959,4 +663,149 @@ input[type=range]:focus::-ms-fill-upper {
 
 .walletlink {
   margin-top: 3px;
+}
+
+#profit-info .showinoptions {
+  margin-top: 0.3em;
+}
+
+#profit-info label[for='showintokens'], #profit-info label[for='showinBTC'] {
+  margin-left: 0.5em;
+}
+
+#profit-info .info-message {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  background: silver;
+  color: black;
+}
+
+.coins {
+    margin-top: 0.3em;
+}
+.token-icon {
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 0.3em;
+    margin-left: 0.3em;
+    border: 1px solid #414141;
+    border-radius: 50%;
+}
+.dai-icon {
+}
+.susd-icon {
+    width: 1.5em;
+    height: 1.5em;
+}
+.susd-waiting-period {
+    margin-left: 3px;
+}
+.pax-icon {
+    border-color: transparent;
+    width: 1.4em;
+    height: 1.4em;
+}
+.token-icon.deposit {
+  margin-bottom: 1em;
+}
+.token-icon.y {
+  border: 1px solid transparent;
+  border-radius: unset;
+}
+.token-icon.y.susdv2 {
+  border: 1px solid #414141;
+  border-radius: 50%;
+}
+.token-icon.hbtc-icon, .token-icon.tbtc-icon {
+  border-color: transparent;
+}
+fieldset.currencies, fieldset.percentage {
+  padding-inline-start: 0.6em;
+  padding-inline-end: 1em;
+}
+li.coins label:hover {
+  cursor: pointer;
+}
+
+.clickable {
+  cursor: pointer;
+}
+.clickable:hover {
+  border-bottom: 1px solid black;
+  /*text-decoration: underline;*/
+}
+.swaprates-icon {
+  height: 0.8em;
+}
+#exchange-rate:hover {
+  border-bottom: 1px solid #006000;
+}
+
+
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  width: 200px; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.waiting-message .loading.line {
+  margin-left: 0.3em;
+}
+
+.betaversion {
+  margin-bottom: 1em;
+}
+
+.vamiddle {
+  vertical-align: middle;
+}
+
+.icon.cancel img, .icon.warning {
+  width: 1em;
+  margin-left: 0.8em;
+  filter: invert(13%) sepia(90%) saturate(4444%) hue-rotate(11deg) brightness(88%) contrast(97%);
+}
+.icon.warning {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+label[for='showinUSD'], label[for='showintokens'], label[for='showinBTC'] {
+  cursor: pointer;
+}
+
+.hoverpointer {
+  cursor: pointer;
+}
+
+.clear-cache-icon:hover {
+  transform: rotateZ(45deg);
 }
