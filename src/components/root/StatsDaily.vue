@@ -10,7 +10,7 @@
 		<div class='window white' v-for='(currency, i) in Object.keys(pools)'>
 			<p class='text-center'>
 		      	<router-link :to="currency == 'susd' ? 'susdv2' : currency" v-show="currency != 'susd'">
-		      		curve.fi/{{currency == 'iearn' ? 'y' : currency == 'susd' ? 'susdv2' : currency}}
+		      		trade.stablexswap.com{{currency == 'iearn' ? 'y' : currency == 'susd' ? 'susdv2' : currency}}
 		      	</router-link>
 		      	<a href='https://iearn.finance/pool' v-show="currency == 'susd'">susd</a>
 	      	</p>
@@ -194,7 +194,7 @@
 			}
 
 /*			let pools = Object.values(this.pools).slice(0, 4)
-	        requests = pools.map(p => fetch(`https://beta.curve.fi/raw-stats/${p}-30m.json`))
+	        requests = pools.map(p => fetch(`https://beta.trade.stablexswap.comraw-stats/${p}-30m.json`))
 			requests = await Promise.all(requests)
 			let jsons = await Promise.all(requests.map(r => r.json()))
 			console.log(jsons)*/

@@ -9,20 +9,16 @@
     import { capitalizeFirstLetter } from './utils/helpers'
 
     const descriptions = {
-    	compound: 'A curve.fi portal for swapping cDAI/cUSDC',
-    	usdt: 'A curve.fi Tethered portal for swapping cDAI/cUSDC/USDT',
-    	iearn: 'A curve.fi yTokens portal for swapping DAI/USDC/USDT/TUSD',
-    	busd: 'A curve.fi portal for swapping BUSD and other stablecoins',
+    	compound: 'A StableXswapportal for swapping DAI/USDC',
+    	usdt: 'A StableXswapTethered portal for swapping DAI/USDC/USDT',
+    	iearn: 'A StableXswapyTokens portal for swapping DAI/USDC/USDT/TUSD',
+    	busd: 'A StableXswapportal for swapping BUSD and other stablecoins',
     }
 
     const titles = {
     	compound: 'Compounded',
     	usdt: 'Tethered',
-    	iearn: 'Yield',
-    	busd: 'bUSD',
-    	susd: 'sUSD-yCurve old',
-    	susdv2: 'sUSD',
-        pax: 'PAX',
+    	busd: 'bUSD'
     }
 
 	export default {
@@ -30,18 +26,18 @@
 			return {
 				title: 'StableXswap :: ' + titles[this.currentPool],
 				meta: [
-					{'property': 'og:title', 'content': 'curve.fi/' + this.currentPool},
-					{'property': 'og:url', 'content': 'https://curve.fi/' + this.currentPool},
+					{'property': 'og:title', 'content': 'trade.stablexswap.com' + this.currentPool},
+					{'property': 'og:url', 'content': 'https://trade.stablexswap.com' + this.currentPool},
 					{'property': 'og:type', 'content': 'website'},
 					{'property': 'og:description', 'content': descriptions[this.currentPool]},
-					{'property': 'og:image', 'content':  '/curve' + this.currentPool + '_preview.png'},
+					{'property': 'og:image', 'content':  '/stax' + this.currentPool + '_preview.png'},
 					{'name': 'twitter:card', 'content': 'summary_large_image'},
-					{'name': 'twitter:title', 'content': 'curve.fi/' + this.currentPool},
-					{'name': 'twitter:site', 'content': '@CurveFinance'},
-					{'name': 'twitter:creator', 'content': '@CurveFinance'},
+					{'name': 'twitter:title', 'content': 'trade.stablexswap.com' + this.currentPool},
+					{'name': 'twitter:site', 'content': '@stablexswap'},
+					{'name': 'twitter:creator', 'content': '@stablexswap'},
 					{'name': 'twitter:description', 'content': descriptions[this.currentPool]},
-					{'name': 'twitter:url', 'content': 'https://curve.fi/' + this.currentPool},
-					{'name': 'twitter:image', 'content': this.currentPool + '/curve_preview.png'},
+					{'name': 'twitter:url', 'content': 'https://trade.stablexswap.com' + this.currentPool},
+					{'name': 'twitter:image', 'content': this.currentPool + '/stax_preview.png'},
 				]
 			}
 		},

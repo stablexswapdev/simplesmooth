@@ -13,7 +13,7 @@ body {
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 400;
-  src: local('JetBrains Mono Regular'), local('JetBrainsMono-Regular'), url(https://curve.fi/JetBrainsMono-Regular.woff2) format('woff2');
+  src: local('JetBrains Mono Regular'), local('JetBrainsMono-Regular'), url(https://trade.stablexswap.comJetBrainsMono-Regular.woff2) format('woff2');
 }
 
 .window {

@@ -183,7 +183,7 @@
 				if(subdomain == 'susdv2') subdomain = 'susd'
 
 				if(subdomain == 'synthetix') {
-					let res = await fetch(`https://${subdomain}.curve.fi/stats.json`);
+					let res = await fetch(`https://${subdomain}.trade.stablexswap.comstats.json`);
 					let json = await res.json()
 					this.apr = json.apr;
 					this.daily_apr = json.daily_apr;

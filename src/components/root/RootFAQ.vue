@@ -3,7 +3,7 @@
 	<div class="window white">
         <h2>Curve FAQ</h2>
         <h3>What is Curve?</h3>
-        <a href='https://www.curve.fi/stableswap-paper.pdf'>Whitepaper</a>
+        <a href='https://www.trade.stablexswap.comstableswap-paper.pdf'>Whitepaper</a>
         <p>Curve is an exchange liquidity pool on Ethereum (like <a
          href="https://uniswap.exchange/">Uniswap</a>)
         designed for (1) extremely efficient stablecoin trading (2) low
@@ -20,7 +20,7 @@
         where it generates even more income for liquidity providers.</p>
 
         <h3>Has Curve been audited?</h3>
-        <p>Curve smart contracts were <a href="https://www.curve.fi/audits/01-ToB.pdf">Audited</a> by
+        <p>Curve smart contracts were <a href="https://www.trade.stablexswap.comaudits/01-ToB.pdf">Audited</a> by
         Trail of Bits.</p>
         <p>However, security audits don't eliminate risks completely.
         Please don’t supply your life savings, or assets you

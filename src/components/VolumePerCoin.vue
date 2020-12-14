@@ -8,17 +8,8 @@
 				<input id='usdtpool' type='checkbox' value='usdt' v-model='piepools'/>
 				<label for='usdtpool'>usdt</label>
 
-				<input id='ypool' type='checkbox' value='y' v-model='piepools'/>
-				<label for='ypool'>Y</label>
-
 				<input id='busdpool' type='checkbox' value='busd' v-model='piepools'/>
-				<label for='busdpool'>bUSD</label>
-
-				<input id='susdpool' type='checkbox' value='susd' v-model='piepools'/>
-				<label for='susdpool'>sUSD</label>
-
-				<input id='paxpool' type='checkbox' value='pax' v-model='piepools'/>
-				<label for='paxpool'>PAX</label>
+				<label for='busdpool'>BUSD</label>
 
 				<button @click='selectPools'>Select</button>
 			</div>

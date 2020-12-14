@@ -9,18 +9,10 @@
 				<input id='usdtpool' type='checkbox' value='usdt' v-model='pools'/>
 				<label for='usdtpool'>usdt</label>
 
-				<input id='ypool' type='checkbox' value='iearn' v-model='pools'/>
-				<label for='ypool'>Y</label>
-
 				<input id='busdpool' type='checkbox' value='busd' v-model='pools'/>
 				<label for='busdpool'>bUSD</label>
 
-				<input id='susdpool' type='checkbox' value='susdv2' v-model='pools'/>
-				<label for='susdpool'>sUSD</label>
-
-				<input id='paxpool' type='checkbox' value='pax' v-model='pools'/>
-				<label for='paxpool'>PAX</label>
-
+			
 				<button @click="selectPoolsHandler">Select</button>
 
 				<table class="tui-table">

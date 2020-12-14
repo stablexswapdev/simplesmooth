@@ -47,17 +47,17 @@
 		metaInfo: {
 	      title: 'StableXswap :: Contracts',
 	      meta: [
-	        {'property': 'og:title', 'content': 'beta.curve.fi/contracts'},
-	        {'property': 'og:url', 'content': 'https://curve.fi/contracts'},
+	        {'property': 'og:title', 'content': 'beta.trade.stablexswap.comcontracts'},
+	        {'property': 'og:url', 'content': 'https://trade.stablexswap.comcontracts'},
 	        {'property': 'og:type', 'content': 'website'},
 	        {'property': 'og:description', 'content': 'Curve is an exchange liquidity pool on Ethereum designed for extremely efficient stablecoin trading'},
 	        {'property': 'og:image', 'content': '/curve.png'},
 	        {'name': 'twitter:card', 'content': 'summary_large_image'},
-	        {'name': 'twitter:title', 'content': 'beta.curve.fi/contracts'},
-	        {'name': 'twitter:site', 'content': '@CurveFinance'},
-	        {'name': 'twitter:creator', 'content': '@CurveFinance'},
+	        {'name': 'twitter:title', 'content': 'beta.trade.stablexswap.comcontracts'},
+	        {'name': 'twitter:site', 'content': '@stablexswap'},
+	        {'name': 'twitter:creator', 'content': '@stablexswap'},
 	        {'name': 'twitter:description', 'content': 'Curve is an exchange liquidity pool on Ethereum designed for extremely efficient stablecoin trading'},
-	        {'name': 'twitter:url', 'content': 'https://curve.fi/contracts'},
+	        {'name': 'twitter:url', 'content': 'https://trade.stablexswap.comcontracts'},
 	        {'name': 'twitter:image', 'content': '/curve.png'},
 	      ]
 	    },

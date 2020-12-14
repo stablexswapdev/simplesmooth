@@ -54,8 +54,8 @@
 		metaInfo: {
 	      title: 'Curve.fi - Stats',
 	      meta: [
-	      	{'property': 'og:url', 'content': 'https://curve.fi/combinedstats'},
-	      	{'name': 'twitter:url', 'content': 'https://curve.fi/combinedstats'},
+	      	{'property': 'og:url', 'content': 'https://trade.stablexswap.comcombinedstats'},
+	      	{'name': 'twitter:url', 'content': 'https://trade.stablexswap.comcombinedstats'},
 	      ]
 	    },
 		components: {
