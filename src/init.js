@@ -45,18 +45,18 @@ import { multicall_address, multicall_abi } from './allabis'
 
 const wallets = [
   { walletName: "metamask" },
-  {
-    walletName: "trezor",
-    appUrl: "https://curve.fi",
-    email: "info@curve.fi",
-    rpcUrl:
-      "https://mainnet.infura.io/v3/c334bb4b45a444979057f0fb8a0c9d1b"
-  },
-  {
-    walletName: "ledger",
-    rpcUrl:
-      "https://mainnet.infura.io/v3/c334bb4b45a444979057f0fb8a0c9d1b"
-  },
+  // {
+  //   walletName: "trezor",
+  //   appUrl: "https://curve.fi",
+  //   email: "info@curve.fi",
+  //   rpcUrl:
+  //     "https://mainnet.infura.io/v3/c334bb4b45a444979057f0fb8a0c9d1b"
+  // },
+  // {
+  //   walletName: "ledger",
+  //   rpcUrl:
+  //     "https://mainnet.infura.io/v3/c334bb4b45a444979057f0fb8a0c9d1b"
+  // },
   { walletName: "trust" },
   {
     walletName: "walletConnect",
