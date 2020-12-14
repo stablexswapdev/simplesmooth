@@ -15,12 +15,12 @@ const wallets = [
   //   appUrl: "https://curve.fi",
   //   email: "info@curve.fi",
   //   rpcUrl:
-  //     "https://mainnet.infura.io/v3/c334bb4b45a444979057f0fb8a0c9d1b"
+  //     "https://data-seed-prebsc-1-s1.binance.org:8545/"
   // },
   // {
   //   walletName: "ledger",
   //   rpcUrl:
-  //     "https://mainnet.infura.io/v3/c334bb4b45a444979057f0fb8a0c9d1b"
+  //     "https://data-seed-prebsc-1-s1.binance.org:8545/"
   // },
   { walletName: "trust" },
   {
