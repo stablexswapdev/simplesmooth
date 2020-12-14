@@ -34,42 +34,42 @@
 				    	</tr>
 				        <tr v-for='event in paginatedExchanges'>
 				        	<td>
-				        		<a :href="`https://etherscan.io/tx/${event.transactionHash}`">
+				        		<a :href="`https://testnet.bscscan.com/tx/${event.transactionHash}`">
 				        			{{ event.blockNumber }}
 				        		</a>
 				        	</td>
 				            <td>
-				            	<a :href="`https://etherscan.io/tx/${event.transactionHash}`">
+				            	<a :href="`https://testnet.bscscan.com/tx/${event.transactionHash}`">
 				            		{{ event.fromCurrency }}➔{{ event.toCurrency }}
 				            	</a>
 				            </td>
 				            <td>
-				            	<a :href="`https://etherscan.io/tx/${event.transactionHash}`">
+				            	<a :href="`https://testnet.bscscan.com/tx/${event.transactionHash}`">
 				            		{{ event.soldAmount | toFixed2}}
 				            	</a>
 				            </td>
 				            <td>
-				            	<a :href="`https://etherscan.io/tx/${event.transactionHash}`">
+				            	<a :href="`https://testnet.bscscan.com/tx/${event.transactionHash}`">
 				            		{{ event.boughtAmount | toFixed2}}
 				            	</a>
 				            </td>
 				            <td>
-				            	<a :href="`https://etherscan.io/tx/${event.transactionHash}`">
+				            	<a :href="`https://testnet.bscscan.com/tx/${event.transactionHash}`">
 				            		{{ getPool(event) }}
 				            	</a>
 				            </td>
 				            <td>
-				            	<a :href="`https://etherscan.io/tx/${event.transactionHash}`">
+				            	<a :href="`https://testnet.bscscan.com/tx/${event.transactionHash}`">
 				            		{{ event.event }}
 				            	</a>
 		            	 	</td>
 		            	 	<!-- <td>
-				            	<a :href="`https://etherscan.io/tx/${event.transactionHash}`">
+				            	<a :href="`https://testnet.bscscan.com/tx/${event.transactionHash}`">
 		            	 			{{ event.virtual_price}}
 		            	 		</a>
 		            	 	</td> -->
  		            	 	<td>
-		            	 		<a :href="`https://etherscan.io/tx/${event.transactionHash}`">
+		            	 		<a :href="`https://testnet.bscscan.com/tx/${event.transactionHash}`">
 		            	 			{{ (event.yield * 10000).toFixed(4) }} bps
 		            	 		</a>
 		            	 	</td>

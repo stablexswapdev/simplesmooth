@@ -4,10 +4,10 @@
 	            <legend>Contracts</legend>
 	            <fieldset v-for = '(addresses, i) in contractAddresses'>
 	            	<legend>{{allPools[i]}}</legend>
-	                	<a :href = "'https://etherscan.io/address/' + addresses.swap">
+	                	<a :href = "'https://testnet.bscscan.com/address/' + addresses.swap">
 	                		<img class='icon' :src="getTokenUrl(i)"> <span class='text'>swap address</span>
 	                	</a>
-	                	<a :href = "'https://etherscan.io/address/' + addresses.token">
+	                	<a :href = "'https://testnet.bscscan.com/address/' + addresses.token">
 	                		<img class='icon' :src="getTokenUrl(i)"> 
 	                		<span class='text'>[{{tokenNames[i].ticker}}] {{tokenNames[i].name}} token address</span>
 	                	</a>
